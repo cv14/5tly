@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- App Colors -->
+
+    <!-- The color of the app bar. -->
+    <color name="colorPrimary">#FF0303</color>
+
+    <!-- darker app branding color for the app bar -->
+    <color name="colorPrimaryDark">#C5121F</color>
+
+    <!-- theme UI controls like checkboxes and text fields -->
+    <color name="colorAccent">#FCF9F9</color>
+
+    <!-- controls the ‘normal’ state of components such as an
+    unselected EditText, and unselected Checkboxes and RadioButtons-->
+    <color name="colorControlNormal">#FCF9F9</color>
+
+    <!-- You can also set colorControlNormal, colorControlActivated
+         colorControlHighlight.
+
+         colorControlActivated overrides colorAccent as the activated or
+         checked state for Checkboxes and RadioButtons
+
+         colorControlHighlight controls the ripple coloring
+     -->
+
+    <!--Custom Colors -->
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+</resources>

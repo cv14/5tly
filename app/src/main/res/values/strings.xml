@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">5tly</string>
+    <string name="main_logo">Main Logo</string>
+    <string name="facebook_app_id">fb{{ facebook_app_id }}</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+</resources>
