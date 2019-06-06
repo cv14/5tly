@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //code to change the text of google sign in button
-        gSignIn = (SignInButton) findViewById(R.id.sign_in_button);
+        gSignIn =  findViewById(R.id.sign_in_button);
         setGooglePlusButtonText(gSignIn, " Continue with Google ");
 
         //code to that signs you in once email_login_button is clicked
@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    //new comment to test commit
+    //
 
     //method that opens up the swipeSceen
     protected void openSwipeScreen(){
