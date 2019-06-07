@@ -51,8 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    //new comment to test commit
-    //commit test again
+
 
     //method that opens up the swipeSceen
     protected void openSwipeScreen(){

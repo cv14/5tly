@@ -48,10 +48,9 @@
             android:id="@+id/input_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
             android:inputType="textEmailAddress"
-            android:textColor="@color/colorWhite"
-            android:imeOptions="actionNext">
-        </android.support.design.widget.TextInputEditText>
+            android:textColor="@color/colorWhite"></android.support.design.widget.TextInputEditText>
     </android.support.design.widget.TextInputLayout>
 
     <!-- password Label -->
@@ -62,25 +61,24 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:hint="@string/password"
+        android:textColorHint="@color/colorWhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.684"
-        android:hint="@string/password"
-        android:textColorHint="@color/colorWhite"
         app:passwordToggleEnabled="true"
-        app:passwordToggleTint="@color/colorAccent"
-        >
+        app:passwordToggleTint="@color/colorAccent">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/input_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
             android:inputType="textPassword"
-            android:textColor="@color/colorWhite"
-            android:imeOptions="actionDone"/>
+            android:textColor="@color/colorWhite" />
     </android.support.design.widget.TextInputLayout>
 
 
@@ -89,38 +87,31 @@
         android:layout_width="136dp"
         android:layout_height="49dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginBottom="132dp"
         android:background="@drawable/buttonshapedcolor"
         android:padding="12dp"
-        android:text="Log in"
+        android:text="@string/log_in"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/link_signup"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.917" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
     <Button
         android:id="@+id/link_signup"
-        android:layout_width="132dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="136dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="132dp"
         android:background="@drawable/buttonshapedcolor2"
         android:padding="12dp"
         android:text="@string/register"
         android:textColor="@color/colorWhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.836"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.553" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/email_login_button" />
 
     <com.facebook.login.widget.LoginButton
         android:id="@+id/facebook_login_button"
@@ -178,6 +169,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.965" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="181dp" />
 
 
 </android.support.constraint.ConstraintLayout>
