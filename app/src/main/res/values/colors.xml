@@ -9,11 +9,11 @@
     <color name="colorPrimaryDark">#C5121F</color>
 
     <!-- theme UI controls like checkboxes and text fields -->
-    <color name="colorAccent">#FCF9F9</color>
+    <color name="colorAccent">#FDFDFD</color>
 
     <!-- controls the ‘normal’ state of components such as an
     unselected EditText, and unselected Checkboxes and RadioButtons-->
-    <color name="colorControlNormal">#FCF9F9</color>
+    <color name="colorControlNormal">#FFFFFF</color>
 
     <!-- You can also set colorControlNormal, colorControlActivated
          colorControlHighlight.
@@ -27,5 +27,8 @@
     <!--Custom Colors -->
     <color name="colorBlack">#000000</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorYellow">#F5E032</color>
+    <color name="colorRed">#F53326</color>
+    <color name="colorGreen">#93D547</color>
 
 </resources>

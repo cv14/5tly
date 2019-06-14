@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fitsSystemWindows="true"
     android:background="@color/colorBlack">
 
@@ -12,7 +12,8 @@
         android:layout_height="wrap_content"
         android:paddingTop="56dp"
         android:paddingLeft="24dp"
-        android:paddingRight="24dp">
+        android:paddingRight="24dp"
+        >
 
         <ImageView
             android:layout_width="146dp"
@@ -21,18 +22,36 @@
             android:layout_marginBottom="24dp"
             android:src="@drawable/main_logo" />
 
-        <!-- Name Label -->
+        <!-- First Name Label -->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="8dp"
+            android:textColorHint="@color/colorWhite">
 
-            <EditText android:id="@+id/input_name"
+            <EditText android:id="@+id/input_fname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:hint="Name" />
+                android:hint="@string/f_name"
+                android:imeOptions="actionNext"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Last Name Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColorHint="@color/colorWhite">
+
+            <EditText android:id="@+id/input_lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/last_name"
+                android:imeOptions="actionNext"/>
         </android.support.design.widget.TextInputLayout>
 
         <!-- Address Label -->
@@ -40,42 +59,47 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="8dp"
+            android:textColorHint="@color/colorWhite">
+
             <EditText android:id="@+id/input_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPostalAddress"
-                android:hint="Address" />
+                android:hint="@string/address"
+                android:imeOptions="actionNext" />
         </android.support.design.widget.TextInputLayout>
-
-
 
         <!--  Email Label -->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="8dp"
+            android:textColorHint="@color/colorWhite">
 
             <EditText android:id="@+id/input_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:hint="@string/email" />
+                android:hint="@string/email"
+                android:imeOptions="actionNext"
+                android:autofillHints="@string/email" />
         </android.support.design.widget.TextInputLayout>
-
-
+        
         <!-- mobile number -->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="8dp"
+            android:textColorHint="@color/colorWhite">
             <EditText android:id="@+id/input_mobile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
-                android:hint="Mobile Number" />
+                android:inputType="phone"
+                android:hint="@string/mobile_number"
+                android:imeOptions="actionNext"/>
         </android.support.design.widget.TextInputLayout>
 
         <!-- Password Label -->
@@ -83,12 +107,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="8dp"
+            android:textColorHint="@color/colorWhite"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorAccent">
             <EditText android:id="@+id/input_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:hint="Password"/>
+                android:hint="Password"
+                android:imeOptions="actionNext"/>
         </android.support.design.widget.TextInputLayout>
 
         <!-- Password Re-enter Label -->
@@ -96,12 +124,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="8dp"
+            android:textColorHint="@color/colorWhite"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorAccent">
             <EditText android:id="@+id/input_reEnterPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:hint="Re-enter Password"/>
+                android:hint="Re-enter Password"
+                android:imeOptions="actionNext"/>
         </android.support.design.widget.TextInputLayout>
 
         <!-- Referal Code Label -->
@@ -109,12 +141,38 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="8dp"
+            android:textColorHint="@color/colorWhite">
             <EditText android:id="@+id/input_referalCode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Referal Code" />
+                android:hint="@string/referal_code"
+                android:imeOptions="actionDone"/>
         </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <CheckBox
+                android:id="@+id/terms_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I have read and agreed to "
+                android:textColor="@color/colorWhite"/>
+
+            <!-- Terms and Condition -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/terms_and_conditions"
+                android:textColor="@color/colorWhite" />
+
+
+        </LinearLayout>
 
         <!-- Signup Button -->
         <android.support.v7.widget.AppCompatButton
@@ -124,15 +182,19 @@
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
             android:padding="12dp"
-            android:text="Create Account"/>
+            android:text="@string/create_account"
+            android:background="@drawable/buttonshapedcolor"
+            android:enabled="false"/>
 
+        <!-- back to sign in page -->
         <TextView android:id="@+id/link_login"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
-            android:text="Already a member? Login"
+            android:text="@string/already_a_member_login"
+            android:textColor="@color/colorWhite"
             android:gravity="center"
-            android:textSize="16dip"/>
+            android:textSize="16sp"/>
 
     </LinearLayout>
 </ScrollView>

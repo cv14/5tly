@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.google.android.gms.common.SignInButton;
 
 public class MainActivity extends AppCompatActivity {
-    //variable declaraions
+
     //signUpText for opening up the sign up Page
     private Button signUpText;
 
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         //code to change the text of google sign in button
         gSignIn =  findViewById(R.id.sign_in_button);
-        setGooglePlusButtonText(gSignIn, " Continue with Google ");
+        setGooglePlusButtonText(gSignIn, "Continue with Google ");
 
         //code to that signs you in once email_login_button is clicked
         emailLogBtn = findViewById(R.id.email_login_button);
